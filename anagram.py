@@ -7,7 +7,7 @@ if palavra.isalpha() and len(palavra) <= 10 :
     lista=sorted(set(["".join(perm) for perm in permutations(palavra)]))
     print(random.choice(lista))
 
-elif len(palavra) > 10:
+elif palavra.isalpha() and len(palavra) > 10:
     print('Não inventes. MENOS de 10 letras sff.')
 
 else:
