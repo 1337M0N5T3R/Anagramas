@@ -12,11 +12,12 @@ elif len(palavra) > 10:
 
 while True:
     decisao = input("Queres outro anagrama com esta palavra? (sim/nao)")
+    decisao = decisao.casefold()
 
-    if decisao == "sim":
+    if decisao == "sim" or decisao == "s" or decisao == "y":
         print(random.choice(lista))
         continue
 
-    elif decisao != "sim":
+    elif decisao != "sim" or decisao == "s" or decisao == "y":
         print("Adeus")
         break
