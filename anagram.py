@@ -8,4 +8,15 @@ if len(palavra) <= 10:
     print(random.choice(lista))
 
 elif len(palavra) > 10:
-    print('MemoryError')
+    print('Nope. MENOS de 10 sff.')
+
+while True:
+    decisao = input("Queres outro anagrama com esta palavra? (sim/nao)")
+
+    if decisao == "sim":
+        print(random.choice(lista))
+        continue
+
+    elif decisao != "sim":
+        print("Adeus")
+        break
