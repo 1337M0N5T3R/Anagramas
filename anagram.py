@@ -14,12 +14,14 @@ else:
     print('Não inventes. Usa LETRAS sff.')
 
 while palavra.isalpha() and len(palavra) <= 10:
-    decisao = input("Queres outro anagrama com esta palavra? (sim/nao)").casefold()
+    decisao = input("\nQueres outro anagrama com esta palavra? (sim/nao)").casefold()
 
     if decisao == "sim" or decisao == "s" or decisao == "y":
         print(random.choice(lista))
         continue
 
     else:
-        print("Adeus")
+        print("\nAdeus")
         break
+
+input('\nCarrega ENTER para fechar a janela.')
